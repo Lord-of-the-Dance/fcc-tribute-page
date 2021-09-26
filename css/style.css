@@ -1,0 +1,125 @@
+/* Universal Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tag Styles */
+
+body {
+    color: #111;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    width: 75%;
+    margin: auto;
+}
+
+ul li {
+    padding: 10px 5px;
+    margin: 5px;
+    text-align: justify;
+    border-top: 1px solid #111;
+}
+
+ul li:first-child {
+    border-top: none;
+}
+
+/* Class Styles */
+
+.container {
+    width: 60%;
+    margin: 25px auto 0px auto;
+    background-color: rgba(161, 144, 144, 0.74);
+    padding: 20px 50px;
+    box-shadow: 2px 2px 10px 2px #333;
+    border-top: #ddd solid 2px;
+    border-left: #ddd solid 2px;
+    border-radius: 20px;
+}
+
+.year-text {
+    font-weight: bold;
+    display: block;
+    width: 70px;
+    margin: auto;
+}
+
+/* ID Styles */
+
+#filter {
+    background-color: #fff5;
+    padding: 20px;
+}
+
+#img-caption {
+    font-style: italic;
+}
+
+#image {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    margin: 15px auto;
+    opacity: 0.75;
+    box-shadow: 0px 0px 5px 2px #333;
+}
+
+#main {
+    background: url("../img/forum.jpg") center top / cover no-repeat;
+}
+
+#title, #tribute-info h2 {
+    margin: 15px;
+    text-transform: uppercase;
+}
+
+#tribute-info {
+    max-width: 800px;
+}
+
+#tribute-info h2 {
+    text-align: center;
+}
+
+#tribute-link {
+    display: block;
+    width: 400px;
+    text-transform: uppercase;
+    margin: 20px auto;
+    padding: 10px;
+    color: inherit;
+    border-radius: 15px;
+    border: 1px solid #eee;
+    box-shadow: 2px 2px 4px 2px #111;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2em;
+    background-color:rgb(158, 124, 124);
+}
+
+#tribute-link:hover {
+    animation-name: link-hover;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+/* Transitions & Animations */
+
+@keyframes link-hover {
+    100% {
+        color: #eee;
+        background-color:rgb(94, 39, 39);
+    }
+}
